@@ -6,8 +6,15 @@
     <title>AI Certs Event</title>
     <link rel="stylesheet" href="./style.css">
 
+    
+        <!-- Other head elements -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+    
+    
 
-    <script src="./script.js" defer></script>
+
+    <!-- <script src="./script.js" defer></script> -->
 </head>
 <body>
     <header>
@@ -19,15 +26,84 @@
             <nav class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#schedule">Schedule</a>
-                <a href="#speakers">Speakers</a>
+                
+                            <!-- Highlighted: Added a list item for the collapsible event schedule -->
+                    <ul>
+                    <li class="nav-item">
+                        <button class="toggle-btn">Schedule</button>
+                        <!-- Collapsible event schedule content -->
+                        <div class="schedule-content" style="display: none;">
+                            <!-- Schedule details go here -->
+                            <p>Day 1: Orientation</p>
+                            <p>Day 2: Mock Round</p>
+                            
+                        </div>
+                    </li>
+                </ul>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
+
     <main>
         <!-- Main content goes here -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to the AI Certs Event</h1>
+                <p>Join us for an exciting event filled with insightful talks and networking opportunities.</p>
+                <p>Date: July 15, 2024 <span id="countdown" class="countdown"></span></p>
+                <p>Location: Virtual Conference</p>
+                <a href="#register" class="cta-button">Register Now</a>
+            </div>
+        </section>
+
+
+        <!-- <div id="countdown" class="countdown"></div> -->
+
+
+
+         <!-- Event Schedule Section -->
+         <section class="event-schedule">
+            <div class="container">
+                <h2>Event Schedule</h2>
+                <p>Coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Speaker Bios Section -->
+        <section class="speaker-bios">
+            <div class="container">
+                <h2>Speaker Bios</h2>
+                <p>Coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="registration-form">
+            <div class="container">
+                <h2>Registration Form</h2>
+                <p>Coming soon...</p>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="faqs">
+            <div class="container">
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <p>Coming soon...</p>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 AI Certs, Inc. All rights reserved. ™</p>
+            </div>
+        </footer>
+
+
+
     </main>
-    <script src="js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
